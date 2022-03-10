@@ -1,0 +1,58 @@
+.input {
+    width: 75%;
+  }
+  
+  #controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+  
+  }
+  
+  .inputControls {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+  }
+  
+  .container-active {
+    width: 40vw;
+    height: 40vw;
+    border: solid darkgreen 5px;
+    border-radius: 1px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .container-inactive {
+    width: 40vw;
+    height: 40vw;
+    border: solid darkgreen 5px;
+    border-radius: 1px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    pointer-events: none;
+  }
+  
+  .row {
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+  }
+  
+  .square {
+    border: solid rgba(0, 0, 0, 0.3) 1px;
+    width: 50px;
+    height: auto;
+    flex: 1 1 auto;
+  }
