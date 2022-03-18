@@ -1,10 +1,13 @@
 const container = document.createElement('div')
+const background = document.createElement('div')
 const hSlider = document.getElementById('heightSlider')
 const hInput = document.getElementById('heightInput')
 const createGrid = document.getElementById('createGrid')
 const clearGrid = document.getElementById('clearGrid')
 container.classList.toggle('container-active')
-document.body.appendChild(container)
+document.body.appendChild(background)
+background.appendChild(container)
+background.setAttribute('id','background')
 
 window.addEventListener('keydown', (e) => {
   if (e.key == 'Escape') {
@@ -39,8 +42,6 @@ container.addEventListener('mouseenter', () => {
   }
 })
 
-
-
 function updateGrid() {
   clear('row');
   clear('square');
@@ -60,7 +61,7 @@ function fillSquares() {
   const squares = Array.from(document.getElementsByClassName('square'))
   for (const item of squares) {
     item.addEventListener('mouseover', function draw() {
-      item.style.backgroundColor = 'blue';
+      item.style.backgroundColor = 'rgb(18,53,36)';
       item.style.transitionDuration = '1s';
     })
   }
