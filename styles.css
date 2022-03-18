@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background-image: url(/Assets/background_cloud.png), linear-gradient(180deg, rgb(86, 86, 231), 20%, #fcce51);
+  background-image: url(./Assets/background_cloud.png), linear-gradient(180deg, rgb(86, 86, 231), 20%, #fcce51);
   background-repeat: repeat;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 17px;
@@ -9,7 +9,7 @@ body {
 }
 
 #background {
-  background-image: url(/Assets/Background-mockup.png);
+  background-image: url(./Assets/Background-mockup.png);
   background-position: 49% -130px;
   background-repeat: no-repeat;
   min-height: 600px;
